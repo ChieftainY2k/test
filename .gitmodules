@@ -1,0 +1,3 @@
+[submodule "Raspberry"]
+	path = Raspberry
+	url = https://github.com/mysensors/Raspberry.git
