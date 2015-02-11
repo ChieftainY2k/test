@@ -4,3 +4,4 @@ i dalej tak samo
 i testowa linijka
 i rebasowa linijka
 i dodatkowo
+i zmiana dla issue
