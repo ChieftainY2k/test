@@ -5,3 +5,4 @@ i testowa linijka
 i rebasowa linijka
 i dodatkowo
 i zmiana dla issue
+haha zmiana
