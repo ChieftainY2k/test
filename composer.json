@@ -1,0 +1,10 @@
+{
+    "name": "chieftainy2k/mytest",
+    "description": "my test",
+    "type": "project",
+    "minimum-stability":"stable",
+    "require": {
+        "php": ">=5.5",
+        "phpunit/PHPUnit": "~4.0"
+    }
+}
