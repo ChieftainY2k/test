@@ -6,7 +6,12 @@
     </target>
 
     <target name="alltests" depends="prepare">
-        <phpunit haltonfailure="true" haltonerror="true" printsummary="true">
+        <phpunit
+                haltonfailure="true"
+                haltonerror="true"
+                printsummary="true"
+                pharlocation="/usr/local/bin/phpunit"
+        >
             <formatter todir="${basedir}/build/tests" type="xml"/>
             <batchtest classpath="${basedir}/tests/">
                 <fileset dir="${basedir}/tests">
