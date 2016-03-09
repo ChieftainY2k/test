@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="name-of-project" default="build">
 
-    <property name="basedir" value="." override="true"/>
+    <property name="basedir" value="../" override="true"/>
 
     <target name="build" depends="alltests">
         <!--  deploy your project here -->
