@@ -9,13 +9,14 @@
 
     <target name="alltests" depends="prepare">
         <phpunit
+                codecoverage="true"
                 haltonfailure="true"
                 haltonerror="true"
                 printsummary="true"
                 pharlocation="/usr/local/bin/phpunit"
         >
-            <formatter todir="${basedir}/build/tests" type="xml"/>
-            <batchtest classpath="${basedir}/tests/">
+            <formatter type="clover" usefile="false"/>
+            <batchtest>
                 <fileset dir="${basedir}/tests">
                     <include name="**/*Test*.php"/>
                 </fileset>
@@ -24,12 +25,13 @@
     </target>
 
     <target name="clean" description="Cleanup build artifacts">
-        <delete dir="${basedir}/build/tests"/>
+        <!--<delete dir="${basedir}/build/tests"/>-->
     </target>
 
 
     <target name="prepare" depends="clean" description="Prepare for build">
-        <mkdir dir="${basedir}/build/tests"/>
+        <!--<mkdir dir="${basedir}/build/tests"/>-->
+        <echo message="test message"/>
     </target>
 
 
