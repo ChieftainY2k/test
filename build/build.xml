@@ -9,7 +9,7 @@
 
     <target name="alltests" depends="prepare">
         <phpunit
-                codecoverage="true"
+                codecoverage="false"
                 haltonfailure="true"
                 haltonerror="true"
                 printsummary="true"
