@@ -13,13 +13,14 @@
                 haltonerror="true"
                 printsummary="true"
                 pharlocation="/usr/local/bin/phpunit"
+                configuration="tests/phpunit.xml"
         >
             <formatter todir="${basedir}/build/tests" type="xml"/>
-            <batchtest classpath="${basedir}/tests/">
+            <!-- <batchtest classpath="${basedir}/tests/">
                 <fileset dir="${basedir}/tests">
                     <include name="*.php"/>
                 </fileset>
-            </batchtest>
+            </batchtest> -->
         </phpunit>
     </target>
 
