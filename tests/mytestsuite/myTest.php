@@ -34,7 +34,7 @@ class MyTest extends TestCase
      */
     public function testSomethingThatFails()
     {
-        $this->assertFalse(false);
+        $this->assertTrue(true);
     }
 
 

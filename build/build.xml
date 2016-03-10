@@ -7,14 +7,14 @@
         <!--  deploy your project here -->
     </target>
 
-    <target name="alltests">
+    <target name="alltests" depends="prepare">
         <phpunit
                 haltonfailure="true"
                 haltonerror="true"
                 printsummary="true"
                 pharlocation="/usr/local/bin/phpunit"
         >
-            <!-- <formatter todir="${basedir}/build/tests" type="xml"/> -->
+            <formatter todir="${basedir}/build/tests" type="xml"/>
             <batchtest classpath="${basedir}/tests/">
                 <fileset dir="${basedir}/tests">
                     <include name="**/*Test*.php"/>
@@ -22,6 +22,16 @@
             </batchtest>
         </phpunit>
     </target>
+
+    <target name="clean" description="Cleanup build artifacts">
+        <delete dir="${basedir}/build/tests"/>
+    </target>
+
+
+    <target name="prepare" depends="clean" description="Prepare for build">
+        <mkdir dir="${basedir}/build/tests"/>
+    </target>
+
 
 </project>
 
