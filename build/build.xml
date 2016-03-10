@@ -3,7 +3,8 @@
 
     <property name="basedir" value="../" override="true"/>
 
-    <target name="build" depends="alltests">
+    <!--<target name="build" depends="alltests">-->
+    <target name="build">
         <!--  deploy your project here -->
     </target>
 
