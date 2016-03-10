@@ -26,4 +26,14 @@ class MyTest extends TestCase
     }
 
 
+    /**
+     * my fake test that fails
+     *
+     */
+    public function testSomethingThatFails()
+    {
+        $this->assertEmpty(true);
+    }
+
+
 }
