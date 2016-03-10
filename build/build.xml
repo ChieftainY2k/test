@@ -13,7 +13,6 @@
                 haltonfailure="true"
                 haltonerror="true"
                 printsummary="true"
-                pharlocation="/usr/local/bin/phpunit"
         >
             <formatter type="clover" usefile="false"/>
             <batchtest>
