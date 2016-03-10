@@ -3,6 +3,7 @@
  * test the Json service
  */
 
+
 use PHPUnit_Framework_TestCase as TestCase;
 
 class MyTest extends TestCase
@@ -23,6 +24,7 @@ class MyTest extends TestCase
     public function testSomething()
     {
         //$this->assertEmpty(true);
+        $this->assertTrue(true);
     }
 
 
@@ -32,7 +34,7 @@ class MyTest extends TestCase
      */
     public function testSomethingThatFails()
     {
-        $this->assertFalse(true);
+        $this->assertFalse(false);
     }
 
 

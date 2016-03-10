@@ -7,10 +7,4 @@
         </testsuite>
     </testsuites>
 
-    <groups>
-        <exclude>
-            <group>disable</group>
-        </exclude>
-    </groups>
-
 </phpunit>
